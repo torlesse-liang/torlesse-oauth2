@@ -1,0 +1,751 @@
+{
+	"info": {
+		"_postman_id": "4f50031d-58f6-4b54-abde-0e7686ed750f",
+		"name": "torlesse-oauth2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "测试资源拥有者凭据",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth/token?grant_type=password&client_id=torlesse000&client_secret=123456&username=torlesse&password=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "password"
+						},
+						{
+							"key": "client_id",
+							"value": "torlesse000"
+						},
+						{
+							"key": "client_secret",
+							"value": "123456"
+						},
+						{
+							"key": "username",
+							"value": "torlesse"
+						},
+						{
+							"key": "password",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "测试资源拥有者凭据",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/oauth/token?grant_type=password&client_id=userservice1&client_secret=1234&username=writer&password=writer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "password"
+								},
+								{
+									"key": "client_id",
+									"value": "userservice1"
+								},
+								{
+									"key": "client_secret",
+									"value": "1234"
+								},
+								{
+									"key": "username",
+									"value": "writer"
+								},
+								{
+									"key": "password",
+									"value": "writer"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:00:11 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoid3JpdGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2NzYxMSwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoid3JpdGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQsV1JJVEUifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFELFdSSVRFIl0sImp0aSI6IjhkN2I4MzBhLTQxN2MtNGI2My04NTBiLWQ1YzU1ZTAzMzQyYiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMSJ9.pVDMrt0MZHt7ZLjDlR6Vz_nQZEzPTgiob8FJ91Lw0zzypzk8JJ60bGjx3iEWcWOKIf-96HvN5y5RHITvetqVpeiNDxwrZPoF4Q4R4SHdiPU7wLWkvUV9zUenTlD7-D9Xti8HzML29m8-LW0FTxNj2Sr4ovxDaR1hD_YK7WUExu1zqSb0DlFXYNVshpd3xaBqmYmduz4kJoD_u_BX-YXnZUYVPgbEQcb6l7VeUtXe1Tr5iWF8DpoUY4j8hLoF6WPt6U9afLGNoxQBlpHDPJm7JwYzuOaI9h0oPjF-3kNQbNxX03QhzeVhsOTv8syMCLGE7SlkAP8hQ5OMv-BPdqiGpQ\",\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoid3JpdGVyIiwic2NvcGUiOlsiRk9PIl0sImF0aSI6IjhkN2I4MzBhLTQxN2MtNGI2My04NTBiLWQ1YzU1ZTAzMzQyYiIsImV4cCI6MTY0MzI1MjQxMSwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoid3JpdGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQsV1JJVEUifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFELFdSSVRFIl0sImp0aSI6ImYwMjVhNGY5LWExZTktNDIwMS04N2MwLTU1MzYzNTdjZjNhOCIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMSJ9.WIlVWms7QEax5U81cYdauPbLx2UOXx2uAo5grsqq_6i0n8dhSmhwQLS1_qIjszZ7igD6EmhR0m114PzWJJ0nUYNk0_zHXAbT6RILl_1NxY60AgqeZUCz0eYL6pCT2igo8dPX21zsQZtMHvepzRPHV4NH-A23oDmjinH10PymL9uaIiII_ZjKFUDvkzkp_6781e5KtdtzCQKBp4ArcWnxPAlG1ONlLOmrftXhlzyhPM5wHVIKlfImOQWzxgIiVftxVRjM7SxHo6gmbhbX8jTh3KOLP6zW6_Ec3ioZxGIh2VNfRQkvflBedv52cO30xW-TiHV4qgxsPmAyM1u3hmVSQQ\",\n    \"expires_in\": 7199,\n    \"scope\": \"FOO\",\n    \"userDetails\": {\n        \"password\": null,\n        \"username\": \"writer\",\n        \"authorities\": [\n            {\n                \"authority\": \"READ,WRITE\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true,\n        \"credentialsNonExpired\": true,\n        \"enabled\": true\n    },\n    \"jti\": \"8d7b830a-417c-4b63-850b-d5c55e03342b\"\n}"
+				}
+			]
+		},
+		{
+			"name": "授权服务器校验",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth/check_token?client_id=userservice000&client_secret=123456&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidG9ybGVzc2VzZXJ2aWNlIl0sInRvcmxlc3NlIjoidG9ybGVzc2UiLCJ1c2VyX25hbWUiOiJ0b3JsZXNzZSIsInNjb3BlIjpbIlRFU1QiXSwiZXhwIjoxNjQ5NzgxMDUyLCJ1c2VyRGV0YWlscyI6eyJwYXNzd29yZCI6bnVsbCwidXNlcm5hbWUiOiJ0b3JsZXNzZSIsImF1dGhvcml0aWVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn0seyJhdXRob3JpdHkiOiJYWFhfREVMRVRFIn1dLCJhY2NvdW50Tm9uRXhwaXJlZCI6dHJ1ZSwiYWNjb3VudE5vbkxvY2tlZCI6dHJ1ZSwiY3JlZGVudGlhbHNOb25FeHBpcmVkIjp0cnVlLCJlbmFibGVkIjp0cnVlfSwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiIsIlhYWF9ERUxFVEUiXSwianRpIjoiZmJkNTBmM2QtODQ4ZC00N2ZmLWE4MDQtODRhOGQ5NjVhNTM2IiwiY2xpZW50X2lkIjoidG9ybGVzc2UwMDAifQ.OLSVuYVblgUxGGC6WqRanheC0maYqUgaej7y9u5Qu_HpfnKMHkkFBHRaGSS5bDd9A1mHzHVsBK56OYrytZyjbaH6mFXe2WOZEbLctShrT9Ua7rFRvzMTGsNKBYRGgRSd0Q2652pgTPwvaqC1WQs1fG8HvyVNORla_auBfm2m9BwjD-prWqjDZxV0rbtE-b59LxIXQA5wE3ksrxZZqDmmJVCJ1F4boavwjXiHZ2fZv-OSCdTMq2sE6pm8g-mTQn0eKw2XGq1zxH2qC5Tty_Pn8aNQPkL93X-d4KAZfwTKDmYq7wQCSjLryXHwLgVyYNyZDNW-dW4rpOVG9br5aR8vzA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"check_token"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "userservice000"
+						},
+						{
+							"key": "client_secret",
+							"value": "123456"
+						},
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidG9ybGVzc2VzZXJ2aWNlIl0sInRvcmxlc3NlIjoidG9ybGVzc2UiLCJ1c2VyX25hbWUiOiJ0b3JsZXNzZSIsInNjb3BlIjpbIlRFU1QiXSwiZXhwIjoxNjQ5NzgxMDUyLCJ1c2VyRGV0YWlscyI6eyJwYXNzd29yZCI6bnVsbCwidXNlcm5hbWUiOiJ0b3JsZXNzZSIsImF1dGhvcml0aWVzIjpbeyJhdXRob3JpdHkiOiJST0xFX0FETUlOIn0seyJhdXRob3JpdHkiOiJYWFhfREVMRVRFIn1dLCJhY2NvdW50Tm9uRXhwaXJlZCI6dHJ1ZSwiYWNjb3VudE5vbkxvY2tlZCI6dHJ1ZSwiY3JlZGVudGlhbHNOb25FeHBpcmVkIjp0cnVlLCJlbmFibGVkIjp0cnVlfSwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiIsIlhYWF9ERUxFVEUiXSwianRpIjoiZmJkNTBmM2QtODQ4ZC00N2ZmLWE4MDQtODRhOGQ5NjVhNTM2IiwiY2xpZW50X2lkIjoidG9ybGVzc2UwMDAifQ.OLSVuYVblgUxGGC6WqRanheC0maYqUgaej7y9u5Qu_HpfnKMHkkFBHRaGSS5bDd9A1mHzHVsBK56OYrytZyjbaH6mFXe2WOZEbLctShrT9Ua7rFRvzMTGsNKBYRGgRSd0Q2652pgTPwvaqC1WQs1fG8HvyVNORla_auBfm2m9BwjD-prWqjDZxV0rbtE-b59LxIXQA5wE3ksrxZZqDmmJVCJ1F4boavwjXiHZ2fZv-OSCdTMq2sE6pm8g-mTQn0eKw2XGq1zxH2qC5Tty_Pn8aNQPkL93X-d4KAZfwTKDmYq7wQCSjLryXHwLgVyYNyZDNW-dW4rpOVG9br5aR8vzA"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "授权服务器校验",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/oauth/check_token?client_id=userservice1&client_secret=1234&token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoid3JpdGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2NzYxMSwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoid3JpdGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQsV1JJVEUifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFELFdSSVRFIl0sImp0aSI6IjhkN2I4MzBhLTQxN2MtNGI2My04NTBiLWQ1YzU1ZTAzMzQyYiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMSJ9.pVDMrt0MZHt7ZLjDlR6Vz_nQZEzPTgiob8FJ91Lw0zzypzk8JJ60bGjx3iEWcWOKIf-96HvN5y5RHITvetqVpeiNDxwrZPoF4Q4R4SHdiPU7wLWkvUV9zUenTlD7-D9Xti8HzML29m8-LW0FTxNj2Sr4ovxDaR1hD_YK7WUExu1zqSb0DlFXYNVshpd3xaBqmYmduz4kJoD_u_BX-YXnZUYVPgbEQcb6l7VeUtXe1Tr5iWF8DpoUY4j8hLoF6WPt6U9afLGNoxQBlpHDPJm7JwYzuOaI9h0oPjF-3kNQbNxX03QhzeVhsOTv8syMCLGE7SlkAP8hQ5OMv-BPdqiGpQ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"check_token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "userservice1"
+								},
+								{
+									"key": "client_secret",
+									"value": "1234"
+								},
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoid3JpdGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2NzYxMSwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoid3JpdGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQsV1JJVEUifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFELFdSSVRFIl0sImp0aSI6IjhkN2I4MzBhLTQxN2MtNGI2My04NTBiLWQ1YzU1ZTAzMzQyYiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMSJ9.pVDMrt0MZHt7ZLjDlR6Vz_nQZEzPTgiob8FJ91Lw0zzypzk8JJ60bGjx3iEWcWOKIf-96HvN5y5RHITvetqVpeiNDxwrZPoF4Q4R4SHdiPU7wLWkvUV9zUenTlD7-D9Xti8HzML29m8-LW0FTxNj2Sr4ovxDaR1hD_YK7WUExu1zqSb0DlFXYNVshpd3xaBqmYmduz4kJoD_u_BX-YXnZUYVPgbEQcb6l7VeUtXe1Tr5iWF8DpoUY4j8hLoF6WPt6U9afLGNoxQBlpHDPJm7JwYzuOaI9h0oPjF-3kNQbNxX03QhzeVhsOTv8syMCLGE7SlkAP8hQ5OMv-BPdqiGpQ"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:04:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"aud\": [\n        \"userservice\"\n    ],\n    \"user_name\": \"writer\",\n    \"scope\": [\n        \"FOO\"\n    ],\n    \"active\": true,\n    \"exp\": 1640667611,\n    \"userDetails\": {\n        \"password\": null,\n        \"username\": \"writer\",\n        \"authorities\": [\n            {\n                \"authority\": \"READ,WRITE\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true,\n        \"credentialsNonExpired\": true,\n        \"enabled\": true\n    },\n    \"authorities\": [\n        \"READ,WRITE\"\n    ],\n    \"jti\": \"8d7b830a-417c-4b63-850b-d5c55e03342b\",\n    \"client_id\": \"userservice1\"\n}"
+				}
+			]
+		},
+		{
+			"name": "客户端授权许可",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth/token?grant_type=client_credentials&client_id=torlesse001&client_secret=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials"
+						},
+						{
+							"key": "client_id",
+							"value": "torlesse001"
+						},
+						{
+							"key": "client_secret",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "客户端授权许可",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/oauth/token?grant_type=client_credentials&client_id=userservice2&client_secret=1234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials"
+								},
+								{
+									"key": "client_id",
+									"value": "userservice2"
+								},
+								{
+									"key": "client_secret",
+									"value": "1234"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:05:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2NzkzNSwiYXV0aG9yaXRpZXMiOlsiUkVBRCIsIldSSVRFIl0sImp0aSI6ImM3NDAxMzMwLTlkZGMtNGMyNS1hNWViLTlhMmRkYjM2MjlhOCIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMiJ9.PIvsYl75uBmhu_C01h3a0n-_YN6m5yJiUx57e-zUMlz6Ni0tD0K5aPwMrinGOIoYBH5tT3KuHeq5dJtN8-427-2_WvnOYPYUAYqKnsJ_phMNhDYi7mgWHc3P5SKonPq338ljm0TAvdj7nT9Is4w-xpXEq4q0ZbfjDRWlr-WIjdwlw1Du7un8z-JeLT_9CNiAXUIpA_hV9XRL3TRwGS15nLmsrnUOQYm28UtJrwxsUteqdmSrXOXPGDrCIEp5bQVfDKX_pNYa3ArlmAjZex-74chxKL-LLfoUvQJNdL5_mrFbhIM0SnHblNv4As9O3tiymznATMEDynMPAqnnpctosA\",\n    \"token_type\": \"bearer\",\n    \"expires_in\": 7199,\n    \"scope\": \"FOO\",\n    \"jti\": \"c7401330-9ddc-4c25-a5eb-9a2ddb3629a8\"\n}"
+				}
+			]
+		},
+		{
+			"name": "授权码模式",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth/token?grant_type=authorization_code&client_id=torlesse002&client_secret=123456&code=SBkZt5&redirect_uri=https://baidu.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "authorization_code"
+						},
+						{
+							"key": "client_id",
+							"value": "torlesse002"
+						},
+						{
+							"key": "client_secret",
+							"value": "123456"
+						},
+						{
+							"key": "code",
+							"value": "SBkZt5"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://baidu.com"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "授权码模式",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/oauth/token?grant_type=authorization_code&client_id=userservice3&client_secret=1234&code=1IMMjl&redirect_uri=https://baidu.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oauth",
+								"token"
+							],
+							"query": [
+								{
+									"key": "grant_type",
+									"value": "authorization_code"
+								},
+								{
+									"key": "client_id",
+									"value": "userservice3"
+								},
+								{
+									"key": "client_secret",
+									"value": "1234"
+								},
+								{
+									"key": "code",
+									"value": "1IMMjl"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://baidu.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:23:31 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoicmVhZGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2OTAxMCwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoicmVhZGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFEIl0sImp0aSI6IjdiMmM1OWY1LTQ3ZTItNDJkZi04MTg3LTcyYzQ0MzY5YzI3NCIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMyJ9.cbVW_GuQJqNNisWlO6K6-kejWR2Ka6FqyhTeaechadyCNBwFCLTNfk8lT4Pylvbz6KzYgRIr1IW-ZXVs6-hTMmjnB7zat00uhLy59xaGHm1c6hr_Vl76_fAwtOesU4GfYVo7znrI-4Oh2vf-gCqP2nS61CoCVfKcippk-h9iz1CjMzVpIs8uXifpEaxAjcnsjMy0kgDMecyMkMFwyti2SfXM9FtVx9cZksBdSiJzdFPTJcercJRo5OJ56RdgBsdeJD5dDtsHaOyXvuCzBepeO--b9JOzAgbfvO9qaE0mIS9vC-qkFHtPfKR5AdGvJOZs_Q5r-UmhSRfw-46N5vAmaQ\",\n    \"token_type\": \"bearer\",\n    \"refresh_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoicmVhZGVyIiwic2NvcGUiOlsiRk9PIl0sImF0aSI6IjdiMmM1OWY1LTQ3ZTItNDJkZi04MTg3LTcyYzQ0MzY5YzI3NCIsImV4cCI6MTY0MzI1MzgxMCwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoicmVhZGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFEIl0sImp0aSI6ImNkMGFjNDc2LTIxZTItNGI5NS04ZmJlLTExZjM0MTZjZWQzNiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMyJ9.FbPw9FgClKAoIO30tZyahkO7XxEFZTFxmBRJmFcI6Rcvb8IV24-Guq_Jfiz_PlQ-oGepVXsJVGxx7wOIwFjHwbzOi1vBkh35RrAKHaUmKoy9O5ObgcjO3i5El9sJ6PXY6tFbbFFBjawkiutpeh1X0j_8iimaqfu5sTXY0BRzNQVI4QmS30eB7UZ68e7clqAk3TNHRs5BhIw-hmefSIQBYCkEuHZXtVPC1TeGRvsbV-GnAWBTVOH2ij2XIz2qFmmR5fslgGIJeQ2d3QCLxJgWffvscK-dcjbrLSPVlmDad7c5hHnbNIqK4nBCVl0RZ2WMAvlMcQroKFVvkRIyEgYVSA\",\n    \"expires_in\": 7199,\n    \"scope\": \"FOO\",\n    \"userDetails\": {\n        \"password\": null,\n        \"username\": \"reader\",\n        \"authorities\": [\n            {\n                \"authority\": \"READ\"\n            }\n        ],\n        \"accountNonExpired\": true,\n        \"accountNonLocked\": true,\n        \"credentialsNonExpired\": true,\n        \"enabled\": true\n    },\n    \"jti\": \"7b2c59f5-47e2-42df-8187-72c44369c274\"\n}"
+				}
+			]
+		},
+		{
+			"name": "读权限访问",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoicmVhZGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2OTI3MCwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoicmVhZGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFEIl0sImp0aSI6IjYzMmY3NWRkLTQwNGMtNDYyOS1hZmZkLWM1OTBjNWY3YmJhZiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMyJ9.WFxtT76-sb8LLPRQM50lCmvmM2qhThgLesVOSfKnsyxGYwlgTlM0tBonQoJdZZTb63UIQkp-Hne2g1w6R9C2nv5mJIdmmub8oZs7DzgFiJTLKH9QFuX0UJjxoe4jfwzPhD5VclCAgcjGPXGm5dZkQtTQdOzvOZo0Rt6Pm_EehWBTiAua_xMYi26agCtd2oVNxJ3FeW36BL0969E6AryrahUr7FRyCjjhmQ2zDfRnySssYs96Aj1W9NMie-GaoTiN3y1Y9g9NiioE61yqU704nDsj72IJi1EdMZ2CnaBCONDyzk4pG-mKdExfh4Pg7FwIIoH3Rk3nnTHM6-7D8lo2iQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "读权限访问",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoicmVhZGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2OTI3MCwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoicmVhZGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFEIl0sImp0aSI6IjYzMmY3NWRkLTQwNGMtNDYyOS1hZmZkLWM1OTBjNWY3YmJhZiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMyJ9.WFxtT76-sb8LLPRQM50lCmvmM2qhThgLesVOSfKnsyxGYwlgTlM0tBonQoJdZZTb63UIQkp-Hne2g1w6R9C2nv5mJIdmmub8oZs7DzgFiJTLKH9QFuX0UJjxoe4jfwzPhD5VclCAgcjGPXGm5dZkQtTQdOzvOZo0Rt6Pm_EehWBTiAua_xMYi26agCtd2oVNxJ3FeW36BL0969E6AryrahUr7FRyCjjhmQ2zDfRnySssYs96Aj1W9NMie-GaoTiN3y1Y9g9NiioE61yqU704nDsj72IJi1EdMZ2CnaBCONDyzk4pG-mKdExfh4Pg7FwIIoH3Rk3nnTHM6-7D8lo2iQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:28:40 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"authorities\": [\n        {\n            \"authority\": \"READ\"\n        }\n    ],\n    \"details\": {\n        \"remoteAddress\": \"0:0:0:0:0:0:0:1\",\n        \"sessionId\": null,\n        \"tokenValue\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsidXNlcnNlcnZpY2UiXSwidXNlcl9uYW1lIjoicmVhZGVyIiwic2NvcGUiOlsiRk9PIl0sImV4cCI6MTY0MDY2OTI3MCwidXNlckRldGFpbHMiOnsicGFzc3dvcmQiOm51bGwsInVzZXJuYW1lIjoicmVhZGVyIiwiYXV0aG9yaXRpZXMiOlt7ImF1dGhvcml0eSI6IlJFQUQifV0sImFjY291bnROb25FeHBpcmVkIjp0cnVlLCJhY2NvdW50Tm9uTG9ja2VkIjp0cnVlLCJjcmVkZW50aWFsc05vbkV4cGlyZWQiOnRydWUsImVuYWJsZWQiOnRydWV9LCJhdXRob3JpdGllcyI6WyJSRUFEIl0sImp0aSI6IjYzMmY3NWRkLTQwNGMtNDYyOS1hZmZkLWM1OTBjNWY3YmJhZiIsImNsaWVudF9pZCI6InVzZXJzZXJ2aWNlMyJ9.WFxtT76-sb8LLPRQM50lCmvmM2qhThgLesVOSfKnsyxGYwlgTlM0tBonQoJdZZTb63UIQkp-Hne2g1w6R9C2nv5mJIdmmub8oZs7DzgFiJTLKH9QFuX0UJjxoe4jfwzPhD5VclCAgcjGPXGm5dZkQtTQdOzvOZo0Rt6Pm_EehWBTiAua_xMYi26agCtd2oVNxJ3FeW36BL0969E6AryrahUr7FRyCjjhmQ2zDfRnySssYs96Aj1W9NMie-GaoTiN3y1Y9g9NiioE61yqU704nDsj72IJi1EdMZ2CnaBCONDyzk4pG-mKdExfh4Pg7FwIIoH3Rk3nnTHM6-7D8lo2iQ\",\n        \"tokenType\": \"Bearer\",\n        \"decodedDetails\": null\n    },\n    \"authenticated\": true,\n    \"userAuthentication\": {\n        \"authorities\": [\n            {\n                \"authority\": \"READ\"\n            }\n        ],\n        \"details\": null,\n        \"authenticated\": true,\n        \"principal\": \"reader\",\n        \"credentials\": \"N/A\",\n        \"name\": \"reader\"\n    },\n    \"principal\": \"reader\",\n    \"credentials\": \"\",\n    \"clientOnly\": false,\n    \"oauth2Request\": {\n        \"clientId\": \"userservice3\",\n        \"scope\": [\n            \"FOO\"\n        ],\n        \"requestParameters\": {\n            \"client_id\": \"userservice3\"\n        },\n        \"resourceIds\": [\n            \"userservice\"\n        ],\n        \"authorities\": [],\n        \"approved\": true,\n        \"refresh\": false,\n        \"redirectUri\": null,\n        \"responseTypes\": [],\n        \"extensions\": {},\n        \"refreshTokenRequest\": null,\n        \"grantType\": null\n    },\n    \"name\": \"reader\"\n}"
+				}
+			]
+		},
+		{
+			"name": "读权限访问写权限",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "读权限访问写权限",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Dec 2021 03:29:26 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"access_denied\",\n    \"error_description\": \"不允许访问\"\n}"
+				}
+			]
+		},
+		{
+			"name": "返回登录用户名",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenType",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/user/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"user",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "手机号验证码授权模式测试",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/oauth/token?grant_type=sms_code&client_id=torlesse004&client_secret=123456&telePhone=12345678999&code=123123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "grant_type",
+							"value": "sms_code"
+						},
+						{
+							"key": "client_id",
+							"value": "torlesse004"
+						},
+						{
+							"key": "client_secret",
+							"value": "123456"
+						},
+						{
+							"key": "telePhone",
+							"value": "12345678999"
+						},
+						{
+							"key": "code",
+							"value": "123123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

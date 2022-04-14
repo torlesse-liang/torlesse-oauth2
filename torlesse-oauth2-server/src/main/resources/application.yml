@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: torlesse-oauth2-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://42.194.200.42:3306/torlesse-oauth?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: 123456
+
+jks:
+  name: jwt.jks
+  storepassword: mySecretKey
+  keypassword: mySecretKey
+  alias: jwt
+
+
+logging:
+  level:
+    com.broadview.coupon: debug
