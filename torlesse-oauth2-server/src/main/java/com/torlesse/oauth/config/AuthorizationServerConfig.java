@@ -173,11 +173,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
         ClientDetailsService clientDetails = endpoints.getClientDetailsService();
         AuthorizationServerTokenServices tokenServices = endpoints.getTokenServices();
-        AuthorizationCodeServices authorizationCodeServices = endpoints.getAuthorizationCodeServices();
+        //AuthorizationCodeServices authorizationCodeServices = endpoints.getAuthorizationCodeServices();
         OAuth2RequestFactory requestFactory = endpoints.getOAuth2RequestFactory();
 
         List<TokenGranter> tokenGranters = new ArrayList<>();
-        tokenGranters.add(new AuthorizationCodeTokenGranter(tokenServices, authorizationCodeServices, clientDetails,
+        tokenGranters.add(new AuthorizationCodeTokenGranter(tokenServices, this.authorizationCodeServices(), clientDetails,
                 requestFactory));
         tokenGranters.add(new RefreshTokenGranter(tokenServices, clientDetails, requestFactory));
         ImplicitTokenGranter implicit = new ImplicitTokenGranter(tokenServices, clientDetails, requestFactory);
